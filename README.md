@@ -8,7 +8,7 @@ cp .env.example .env
 ```
 
 
-## Edit .env file
+## Edit .env file (vim, nano.. your favorite choice)
 
 Open enviroment file
 
