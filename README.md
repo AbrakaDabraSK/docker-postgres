@@ -4,7 +4,7 @@ Example stack.yml for postgres server via docker
 ## Run
 
 ```shell
-docker-compose -f stack.yml up -d
+docker-compose up -d
 ```
 
 ## Wait for it to initialize completely, and visit 
