@@ -1,5 +1,5 @@
-# Docker postgresql server with pgadmin4
-Example for postgresql server via docker on ubuntu server.
+# Docker postgres server with pgadmin4
+Example for postgres server via docker on ubuntu server.
 
 ## Make .env file
 
