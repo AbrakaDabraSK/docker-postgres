@@ -1,5 +1,5 @@
 # docker-postgres
-Example stack.yml for postgres server via docker
+Example for postgresql server via docker
 
 ## Run
 
