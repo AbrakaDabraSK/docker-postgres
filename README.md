@@ -55,5 +55,5 @@ docker-compose ps
 ## Visit 
 
 ```shell
-http://host-ip:8080
+http://host-ip:5050
 ```
