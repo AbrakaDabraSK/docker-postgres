@@ -19,7 +19,7 @@ POSTGRES_DB=default_database
 ## Run
 
 ```shell
-docker-compose --env-file ./.env up -d
+docker-compose up -d
 ```
 
 ## Down
