@@ -28,7 +28,7 @@ PGADMIN_DEFAULT_PASSWORD=12345
 PGADMIN_LISTEN_PORT=80
 ```
 
-Quit and save + ENTER
+Quit and save changes, then press ENTER
 
 ```shell
 :wq!
