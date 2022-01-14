@@ -10,10 +10,24 @@ cp .env.example .env
 
 ## Edit .env file
 
+Open enviroment file
+
+```shell
+vim .env
+```
+
+Edit variables
+
 ```shell
 POSTGRES_USER=username
 POSTGRES_PASSWORD=password
 POSTGRES_DB=default_database
+```
+
+Quit and save + ENTER
+
+```shell
+wq!
 ```
 
 ## Run
