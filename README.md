@@ -22,7 +22,19 @@ POSTGRES_DB=default_database
 docker-compose --env-file ./.env up -d
 ```
 
-## Wait for it to initialize completely, and visit 
+## Down
+
+```shell
+docker-compose down
+```
+
+## Check
+
+```shell
+docker-compose ps
+```
+
+## Visit 
 
 ```shell
 http://host-ip:8080
