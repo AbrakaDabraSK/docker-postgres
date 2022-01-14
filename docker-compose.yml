@@ -1,31 +1,36 @@
-version: "3.3"
+version: '3.3'
+
 services:
-  postgresql:
-    image: "postgres:latest"
-    restart: always
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
-    ports:
-      - 5432:5432
-    volumes:
-      - ./data/:/var/lib/postgresql/data/
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "33m"
-  pgadmin4:
-    image: dpage/pgadmin4
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
-    ports:
-      - 5050:80
-    volumes:
-      - ./pgadmin:/root/.pgadmin
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "33m"
+    postgresql:
+        image: postgres:latest
+        restart: always
+        environment:
+          POSTGRES_USER: ${POSTGRES_USER}
+          POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+          POSTGRES_DB: ${POSTGRES_DB}
+        ports:
+          - 5432:5432
+        volumes:
+          - ./data/:/var/lib/postgresql/data/
+        logging:
+          driver: "json-file"
+          options:
+            max-size: "33m"
+        
+    pgadmin:
+        image: dpage/pgadmin4
+        environment: 
+          PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+          PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+        ports:
+            - 5050:80
+        volumes: 
+            - pgadmin:/root/.pgadmin
+       logging:
+        driver: "json-file"
+        options:
+          max-size: "33m"
+        
+volumes:
+    data:
+    pgadmin:
