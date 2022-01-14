@@ -1,5 +1,5 @@
-# docker-postgres
-Example for postgresql server via docker.
+# Docker postgresql server
+Example for postgresql server via docker on ubuntu server.
 
 ## Make .env file
 
