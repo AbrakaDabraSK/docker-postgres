@@ -30,7 +30,7 @@ services:
     volumes: 
       - ./pgadmin:/root/.pgadmin
     depends_on:
-      - postgres
+      - db
     logging:
       driver: "json-file"
       options:
