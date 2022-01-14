@@ -31,7 +31,7 @@ PGADMIN_LISTEN_PORT=80
 Quit and save + ENTER
 
 ```shell
-wq!
+:wq!
 ```
 
 ## Run
