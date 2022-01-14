@@ -1,1 +1,6 @@
+# Enviroment file
 .env
+
+# Folders
+data/
+pgadmin/
