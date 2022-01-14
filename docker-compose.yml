@@ -26,9 +26,9 @@ services:
     volumes: 
       - ./pgadmin:/root/.pgadmin
     logging:
-    driver: "json-file"
-    options:
-      max-size: "33m"
+      driver: "json-file"
+      options:
+        max-size: "33m"
         
 volumes:
   data:
