@@ -16,12 +16,16 @@ Open enviroment file
 vim .env
 ```
 
-Edit variables
+Edit default enviroment file if u need
 
 ```shell
-POSTGRES_USER=<username>
-POSTGRES_PASSWORD=<password>
-POSTGRES_DB=<default_database>
+POSTGRES_USER=root
+POSTGRES_PASSWORD=12345
+POSTGRES_DB=root
+
+PGADMIN_DEFAULT_EMAIL=root@localhost
+PGADMIN_DEFAULT_PASSWORD=12345
+PGADMIN_LISTEN_PORT=80
 ```
 
 Quit and save + ENTER
