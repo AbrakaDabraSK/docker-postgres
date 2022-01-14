@@ -70,5 +70,3 @@ services:
       driver: "json-file"
       options:
         max-size: "25m"
-    
-    
