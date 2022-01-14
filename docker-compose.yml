@@ -13,6 +13,9 @@ services:
   db:
     # Official Postgres image from DockerHub (we use the last version)
     image: "postgres:latest"
+    
+    # Container name
+    container_name: "postgresql"
 
     # By default, a Postgres database is running on the 5432 port.
     # If we want to access the database from our computer (outside the container),
@@ -23,6 +26,9 @@ services:
     # you are connecting to your database.
     ports:
       - 5432:5432
+      
+    expose:
+      - "5432"
 
     environment:
       POSTGRES_USER: username # The PostgreSQL user (useful to connect to the database)
@@ -49,8 +55,20 @@ services:
       # of `/var/lib/postgresql/data/`, automatically the change will appear in `db-data`.
       # You don't need to create the `db-data` folder. Docker Compose will do it for you.
       - ./db-data/:/var/lib/postgresql/data/
+    # Logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "25m"
   adminer:
     image: adminer
+    container_name: adminer
     restart: always
     ports:
       - 8080:8080
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "25m"
+    
+    
