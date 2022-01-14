@@ -14,7 +14,7 @@ services:
     logging:
       driver: "json-file"
       options:
-        max-size: "25m"
+        max-size: "33m"
   pgadmin4:
     image: dpage/pgadmin4
     restart: always
@@ -28,4 +28,4 @@ services:
     logging:
       driver: "json-file"
       options:
-        max-size: "25m"
+        max-size: "33m"
