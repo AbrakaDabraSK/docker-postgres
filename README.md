@@ -19,9 +19,9 @@ vim .env
 Edit variables
 
 ```shell
-POSTGRES_USER=username
-POSTGRES_PASSWORD=password
-POSTGRES_DB=default_database
+POSTGRES_USER=<username>
+POSTGRES_PASSWORD=<password>
+POSTGRES_DB=<default_database>
 ```
 
 Quit and save + ENTER
